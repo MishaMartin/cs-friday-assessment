@@ -1,0 +1,4 @@
+Read over the results from the Runtime Table you created, and write a paragraph that explains the pattern you see. How does each function “scale”? Which of the two functions scales better? How can you tell?
+
+Answer: I thought that it was interesting to note that runtime on smaller numbers, like the tinyArray, was higher on Append Time. I assumed that it would be faster all around. However, it shows over these few tests that the .push method is much easier to scale. There is not a significat spike in the time it takes to commplete the function. 
+Eith the .unshift method, which adds the new number to the front of an array, the function has to shift the entire array every single time taking up more time than the .push method which just adds the new value to the end of the array. This method showed a large spike in the time it took to complete the function showing that it has poor scalability.
